@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </div>
+    
+    <div class="container">
+        <div class="stopwatch">
+            <h1 class="title">Study Timer</h1>
+            <div class="display" id="display">00:00:00</div>
+            
+            <div class="controls">
+                <button class="btn" id="startBtn">Start</button>
+                <button class="btn" id="pauseBtn">Pause</button>
+                <button class="btn" id="resetBtn">Reset</button>
+                <button class="btn" id="lapBtn">Lap</button>
+            </div>
+
+            <div class="session-info">
+                <h2>Study Session Info</h2>
+                <p id="totalTime">Total Study Time: 00:00:00</p>
+                <p id="lapTimes"></p>
+            </div>
+
+            <div class="study-features">
+                <div class="feature-card">
+                    <h3>Break Timer</h3>
+                    <p>25 min study</p>
+                    <p>5 min break</p>
+                    <button class="btn" id="pomodoroBtn">Start Pomodoro</button>
+                </div>
+                <div class="feature-card">
+                    <h3>Goal Tracker</h3>
+                    <input type="text" id="studyGoal" placeholder="Set study goal (mins)">
+                    <p id="goalProgress"></p>
+                </div>
+                <div class="feature-card">
+                    <h3>Subject Timer</h3>
+                    <select id="subjectSelect">
+                        <option value="">Select Subject</option>
+                        <option value="fundamentals_of_computer_network">Fundamentals of Computer Network</option>
+                        <option value="basics_of_machine_learning">Basics of Machine Learning</option>
+                        <option value="foundation_of_datawarehousing">Foundation of Datawarehousing and Data Mining</option>
+                        <option value="integral_calculus">Integral Calculus</option>
+                    </select>
+                    <p id="subjectTime"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
